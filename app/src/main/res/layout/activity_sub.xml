@@ -18,12 +18,14 @@
         app:titleTextColor="@color/white" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/frame_sub"
+        android:id="@+id/nav_host_fragment"
         android:name="com.codesquad.kotilin_cardgame.GameFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10" />
+        android:layout_weight="10"
+        >
 
+    </androidx.fragment.app.FragmentContainerView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_sub"
         android:layout_width="match_parent"

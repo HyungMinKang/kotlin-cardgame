@@ -1,9 +1,7 @@
 package com.codesquad.kotilin_cardgame
 
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -34,10 +32,10 @@ class SubActivity : AppCompatActivity() {
         val transaction= supportFragmentManager.beginTransaction()
         when(itemId){
             R.id.page_setting-> {
-                transaction.replace(R.id.frame_sub, settingFragment).commit()
+                transaction.replace(R.id.nav_host_fragment, settingFragment).commit()
             }
             R.id.page_game->{
-                transaction.replace(R.id.frame_sub, gameFragment).commit()
+                transaction.replace(R.id.nav_host_fragment, gameFragment).commit()
             }
 
         }
